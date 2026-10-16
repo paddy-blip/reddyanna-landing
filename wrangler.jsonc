@@ -1,0 +1,15 @@
+{
+  // Static site served by Cloudflare Workers (assets only, no Worker script).
+  // Rebuild public/ with scripts/build-static.sh after changing WordPress content.
+  "name": "reddyanna-landing",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./public",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  },
+  "routes": [
+    { "pattern": "casinosidprovider.com", "custom_domain": true },
+    { "pattern": "www.casinosidprovider.com", "custom_domain": true }
+  ]
+}
