@@ -1,0 +1,2471 @@
+{
+    "key": "group_ra_page_sections",
+    "title": "Page Sections",
+    "fields": [
+        {
+            "key": "field_ra_page_sections",
+            "label": "Sections",
+            "name": "ra_sections",
+            "type": "flexible_content",
+            "instructions": "Build the page from sections. Leave empty to use the normal editor content (e.g. legal pages).",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "button_label": "Add Section",
+            "layouts": [
+                {
+                    "key": "layout_ra_hero",
+                    "name": "hero",
+                    "label": "Hero Banner",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_ra_hero_eyebrow",
+                            "label": "Small label (eyebrow)",
+                            "name": "eyebrow",
+                            "type": "text",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 35,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_ra_hero_title",
+                            "label": "Heading",
+                            "name": "title",
+                            "type": "text",
+                            "instructions": "Wrap words in <span> to colour them gold.",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 65,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_ra_hero_text",
+                            "label": "Text",
+                            "name": "text",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "rows": 3,
+                            "new_lines": "",
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_ra_hero_button_1",
+                            "label": "Primary button",
+                            "name": "button_1",
+                            "type": "link",
+                            "instructions": "Use URL \"#whatsapp\" to open WhatsApp chat.",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
+                        },
+                        {
+                            "key": "field_ra_hero_button_2",
+                            "label": "Secondary button",
+                            "name": "button_2",
+                            "type": "link",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
+                        },
+                        {
+                            "key": "field_ra_hero_highlights",
+                            "label": "Highlights (tick list)",
+                            "name": "highlights",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "table",
+                            "button_label": "Add highlight",
+                            "max": 4,
+                            "min": 0,
+                            "collapsed": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_ra_hero_hl_text",
+                                    "label": "Text",
+                                    "name": "text",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": false,
+                                    "conditional_logic": false,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": ""
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_ra_hero_image",
+                            "label": "Image",
+                            "name": "image",
+                            "type": "image",
+                            "instructions": "Optional. Leave empty to show the built-in branded ID card visual.",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "id",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": 0,
+                            "min_height": 0,
+                            "min_size": 0,
+                            "max_width": 0,
+                            "max_height": 0,
+                            "max_size": 0,
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_ra_hero_heading_tag",
+                            "label": "Heading tag",
+                            "name": "heading_tag",
+                            "type": "select",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 25,
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "h1": "H1 (page title – use once per page)",
+                                "h2": "H2"
+                            },
+                            "default_value": "h1",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_ra_hero_size",
+                            "label": "Size",
+                            "name": "size",
+                            "type": "select",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 25,
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "large": "Large (home)",
+                                "compact": "Compact (inner page)"
+                            },
+                            "default_value": "large",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_ra_hero_background",
+                            "label": "Background",
+                            "name": "background",
+                            "type": "select",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "": "Default (black)",
+                                "alt": "Alternate (dark grey)",
+                                "glow": "Gold glow"
+                            },
+                            "default_value": false,
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_ra_hero_section_id",
+                            "label": "Section anchor ID",
+                            "name": "section_id",
+                            "type": "text",
+                            "instructions": "Optional. Lets you link to this section, e.g. #faq",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "layout_ra_features",
+                    "name": "features",
+                    "label": "Features \/ Services Grid",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_ra_features_eyebrow",
+                            "label": "Small label (eyebrow)",
+                            "name": "eyebrow",
+                            "type": "text",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 35,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_ra_features_title",
+                            "label": "Heading",
+                            "name": "title",
+                            "type": "text",
+                            "instructions": "Wrap words in <span> to colour them gold.",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 65,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_ra_features_intro",
+                            "label": "Intro text",
+                            "name": "intro",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "rows": 2,
+                            "new_lines": "",
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_ra_features_columns",
+                            "label": "Columns (desktop)",
+                            "name": "columns",
+                            "type": "select",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "2": "2",
+                                "3": "3",
+                                "4": "4"
+                            },
+                            "default_value": 3,
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_ra_features_style",
+                            "label": "Card style",
+                            "name": "style",
+                            "type": "select",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "card": "Card",
+                                "outline": "Outline",
+                                "minimal": "Minimal (no box)"
+                            },
+                            "default_value": "card",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_ra_features_items",
+                            "label": "Items",
+                            "name": "items",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "button_label": "Add item",
+                            "collapsed": "field_ra_features_item_title",
+                            "min": 0,
+                            "max": 0,
+                            "sub_fields": [
+                                {
+                                    "key": "field_ra_features_item_icon",
+                                    "label": "Icon",
+                                    "name": "icon",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": false,
+                                    "conditional_logic": false,
+                                    "wrapper": {
+                                        "width": 25,
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "bolt": "Bolt",
+                                        "shield": "Shield",
+                                        "headset": "Headset",
+                                        "cricket": "Cricket",
+                                        "live": "Live",
+                                        "lock": "Lock",
+                                        "wallet": "Wallet",
+                                        "gift": "Gift",
+                                        "users": "Users",
+                                        "star": "Star",
+                                        "check": "Check",
+                                        "check-circle": "Check Circle",
+                                        "trophy": "Trophy",
+                                        "phone": "Phone",
+                                        "mail": "Mail",
+                                        "map-pin": "Map Pin",
+                                        "devices": "Devices",
+                                        "clock": "Clock",
+                                        "chart": "Chart",
+                                        "target": "Target",
+                                        "eye": "Eye",
+                                        "heart": "Heart",
+                                        "refresh": "Refresh",
+                                        "id-card": "Id Card",
+                                        "globe": "Globe",
+                                        "calendar": "Calendar",
+                                        "whatsapp": "Whatsapp"
+                                    },
+                                    "default_value": "check-circle",
+                                    "ui": 1,
+                                    "multiple": 0,
+                                    "allow_null": 0,
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "return_format": "value"
+                                },
+                                {
+                                    "key": "field_ra_features_item_title",
+                                    "label": "Title",
+                                    "name": "title",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": false,
+                                    "conditional_logic": false,
+                                    "wrapper": {
+                                        "width": 75,
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": ""
+                                },
+                                {
+                                    "key": "field_ra_features_item_text",
+                                    "label": "Text",
+                                    "name": "text",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": false,
+                                    "conditional_logic": false,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "rows": 2,
+                                    "new_lines": "",
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_ra_features_item_link",
+                                    "label": "Link (optional)",
+                                    "name": "link",
+                                    "type": "link",
+                                    "instructions": "",
+                                    "required": false,
+                                    "conditional_logic": false,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_ra_features_button",
+                            "label": "Button below grid (optional)",
+                            "name": "button",
+                            "type": "link",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
+                        },
+                        {
+                            "key": "field_ra_features_background",
+                            "label": "Background",
+                            "name": "background",
+                            "type": "select",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "": "Default (black)",
+                                "alt": "Alternate (dark grey)",
+                                "glow": "Gold glow"
+                            },
+                            "default_value": false,
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_ra_features_section_id",
+                            "label": "Section anchor ID",
+                            "name": "section_id",
+                            "type": "text",
+                            "instructions": "Optional. Lets you link to this section, e.g. #faq",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "layout_ra_about",
+                    "name": "about",
+                    "label": "Text + Image (About)",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_ra_about_eyebrow",
+                            "label": "Small label (eyebrow)",
+                            "name": "eyebrow",
+                            "type": "text",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 35,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_ra_about_title",
+                            "label": "Heading",
+                            "name": "title",
+                            "type": "text",
+                            "instructions": "Wrap words in <span> to colour them gold.",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 65,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_ra_about_content",
+                            "label": "Content",
+                            "name": "content",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "tabs": "all",
+                            "toolbar": "basic",
+                            "media_upload": 0,
+                            "default_value": "",
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_ra_about_points",
+                            "label": "Points",
+                            "name": "points",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "button_label": "Add point",
+                            "collapsed": "field_ra_about_point_title",
+                            "min": 0,
+                            "max": 0,
+                            "sub_fields": [
+                                {
+                                    "key": "field_ra_about_point_icon",
+                                    "label": "Icon",
+                                    "name": "icon",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": false,
+                                    "conditional_logic": false,
+                                    "wrapper": {
+                                        "width": 25,
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "bolt": "Bolt",
+                                        "shield": "Shield",
+                                        "headset": "Headset",
+                                        "cricket": "Cricket",
+                                        "live": "Live",
+                                        "lock": "Lock",
+                                        "wallet": "Wallet",
+                                        "gift": "Gift",
+                                        "users": "Users",
+                                        "star": "Star",
+                                        "check": "Check",
+                                        "check-circle": "Check Circle",
+                                        "trophy": "Trophy",
+                                        "phone": "Phone",
+                                        "mail": "Mail",
+                                        "map-pin": "Map Pin",
+                                        "devices": "Devices",
+                                        "clock": "Clock",
+                                        "chart": "Chart",
+                                        "target": "Target",
+                                        "eye": "Eye",
+                                        "heart": "Heart",
+                                        "refresh": "Refresh",
+                                        "id-card": "Id Card",
+                                        "globe": "Globe",
+                                        "calendar": "Calendar",
+                                        "whatsapp": "Whatsapp"
+                                    },
+                                    "default_value": "check-circle",
+                                    "ui": 1,
+                                    "multiple": 0,
+                                    "allow_null": 0,
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "return_format": "value"
+                                },
+                                {
+                                    "key": "field_ra_about_point_title",
+                                    "label": "Title",
+                                    "name": "title",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": false,
+                                    "conditional_logic": false,
+                                    "wrapper": {
+                                        "width": 75,
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": ""
+                                },
+                                {
+                                    "key": "field_ra_about_point_text",
+                                    "label": "Text",
+                                    "name": "text",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": false,
+                                    "conditional_logic": false,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "rows": 2,
+                                    "new_lines": "",
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": ""
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_ra_about_button",
+                            "label": "Button",
+                            "name": "button",
+                            "type": "link",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
+                        },
+                        {
+                            "key": "field_ra_about_image",
+                            "label": "Image",
+                            "name": "image",
+                            "type": "image",
+                            "instructions": "Optional. Leave empty for the built-in \"years of trust\" visual.",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 25,
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "id",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": 0,
+                            "min_height": 0,
+                            "min_size": 0,
+                            "max_width": 0,
+                            "max_height": 0,
+                            "max_size": 0,
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_ra_about_image_position",
+                            "label": "Image position",
+                            "name": "image_position",
+                            "type": "select",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 25,
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "right": "Right",
+                                "left": "Left"
+                            },
+                            "default_value": "right",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_ra_about_background",
+                            "label": "Background",
+                            "name": "background",
+                            "type": "select",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "": "Default (black)",
+                                "alt": "Alternate (dark grey)",
+                                "glow": "Gold glow"
+                            },
+                            "default_value": false,
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_ra_about_section_id",
+                            "label": "Section anchor ID",
+                            "name": "section_id",
+                            "type": "text",
+                            "instructions": "Optional. Lets you link to this section, e.g. #faq",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "layout_ra_stats",
+                    "name": "stats",
+                    "label": "Stats \/ Achievements",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_ra_stats_eyebrow",
+                            "label": "Small label (eyebrow)",
+                            "name": "eyebrow",
+                            "type": "text",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 35,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_ra_stats_title",
+                            "label": "Heading",
+                            "name": "title",
+                            "type": "text",
+                            "instructions": "Wrap words in <span> to colour them gold.",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 65,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_ra_stats_intro",
+                            "label": "Intro text",
+                            "name": "intro",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "rows": 2,
+                            "new_lines": "",
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_ra_stats_items",
+                            "label": "Stats",
+                            "name": "items",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "table",
+                            "button_label": "Add stat",
+                            "max": 6,
+                            "min": 0,
+                            "collapsed": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_ra_stats_item_number",
+                                    "label": "Number",
+                                    "name": "number",
+                                    "type": "number",
+                                    "instructions": "",
+                                    "required": false,
+                                    "conditional_logic": false,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "min": "",
+                                    "max": "",
+                                    "step": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": ""
+                                },
+                                {
+                                    "key": "field_ra_stats_item_suffix",
+                                    "label": "Suffix (e.g. + or K+)",
+                                    "name": "suffix",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": false,
+                                    "conditional_logic": false,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": ""
+                                },
+                                {
+                                    "key": "field_ra_stats_item_label",
+                                    "label": "Label",
+                                    "name": "label",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": false,
+                                    "conditional_logic": false,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": ""
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_ra_stats_background",
+                            "label": "Background",
+                            "name": "background",
+                            "type": "select",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "": "Default (black)",
+                                "alt": "Alternate (dark grey)",
+                                "glow": "Gold glow"
+                            },
+                            "default_value": false,
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_ra_stats_section_id",
+                            "label": "Section anchor ID",
+                            "name": "section_id",
+                            "type": "text",
+                            "instructions": "Optional. Lets you link to this section, e.g. #faq",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "layout_ra_steps",
+                    "name": "steps",
+                    "label": "How It Works (Steps)",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_ra_steps_eyebrow",
+                            "label": "Small label (eyebrow)",
+                            "name": "eyebrow",
+                            "type": "text",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 35,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_ra_steps_title",
+                            "label": "Heading",
+                            "name": "title",
+                            "type": "text",
+                            "instructions": "Wrap words in <span> to colour them gold.",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 65,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_ra_steps_intro",
+                            "label": "Intro text",
+                            "name": "intro",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "rows": 2,
+                            "new_lines": "",
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_ra_steps_items",
+                            "label": "Steps",
+                            "name": "items",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "button_label": "Add step",
+                            "max": 6,
+                            "min": 0,
+                            "collapsed": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_ra_steps_item_title",
+                                    "label": "Title",
+                                    "name": "title",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": false,
+                                    "conditional_logic": false,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": ""
+                                },
+                                {
+                                    "key": "field_ra_steps_item_text",
+                                    "label": "Text",
+                                    "name": "text",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": false,
+                                    "conditional_logic": false,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "rows": 2,
+                                    "new_lines": "",
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": ""
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_ra_steps_button",
+                            "label": "Button (optional)",
+                            "name": "button",
+                            "type": "link",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
+                        },
+                        {
+                            "key": "field_ra_steps_background",
+                            "label": "Background",
+                            "name": "background",
+                            "type": "select",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "": "Default (black)",
+                                "alt": "Alternate (dark grey)",
+                                "glow": "Gold glow"
+                            },
+                            "default_value": false,
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_ra_steps_section_id",
+                            "label": "Section anchor ID",
+                            "name": "section_id",
+                            "type": "text",
+                            "instructions": "Optional. Lets you link to this section, e.g. #faq",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "layout_ra_split_cards",
+                    "name": "split_cards",
+                    "label": "Split Cards (Vision \/ Mission)",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_ra_split_cards_eyebrow",
+                            "label": "Small label (eyebrow)",
+                            "name": "eyebrow",
+                            "type": "text",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 35,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_ra_split_cards_title",
+                            "label": "Heading",
+                            "name": "title",
+                            "type": "text",
+                            "instructions": "Wrap words in <span> to colour them gold.",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 65,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_ra_split_cards_intro",
+                            "label": "Intro text",
+                            "name": "intro",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "rows": 2,
+                            "new_lines": "",
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_ra_split_cards_items",
+                            "label": "Cards",
+                            "name": "items",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "button_label": "Add card",
+                            "max": 4,
+                            "min": 0,
+                            "collapsed": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_ra_split_item_icon",
+                                    "label": "Icon",
+                                    "name": "icon",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": false,
+                                    "conditional_logic": false,
+                                    "wrapper": {
+                                        "width": 25,
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "bolt": "Bolt",
+                                        "shield": "Shield",
+                                        "headset": "Headset",
+                                        "cricket": "Cricket",
+                                        "live": "Live",
+                                        "lock": "Lock",
+                                        "wallet": "Wallet",
+                                        "gift": "Gift",
+                                        "users": "Users",
+                                        "star": "Star",
+                                        "check": "Check",
+                                        "check-circle": "Check Circle",
+                                        "trophy": "Trophy",
+                                        "phone": "Phone",
+                                        "mail": "Mail",
+                                        "map-pin": "Map Pin",
+                                        "devices": "Devices",
+                                        "clock": "Clock",
+                                        "chart": "Chart",
+                                        "target": "Target",
+                                        "eye": "Eye",
+                                        "heart": "Heart",
+                                        "refresh": "Refresh",
+                                        "id-card": "Id Card",
+                                        "globe": "Globe",
+                                        "calendar": "Calendar",
+                                        "whatsapp": "Whatsapp"
+                                    },
+                                    "default_value": "target",
+                                    "ui": 1,
+                                    "multiple": 0,
+                                    "allow_null": 0,
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "return_format": "value"
+                                },
+                                {
+                                    "key": "field_ra_split_item_title",
+                                    "label": "Title",
+                                    "name": "title",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": false,
+                                    "conditional_logic": false,
+                                    "wrapper": {
+                                        "width": 75,
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": ""
+                                },
+                                {
+                                    "key": "field_ra_split_item_text",
+                                    "label": "Text",
+                                    "name": "text",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": false,
+                                    "conditional_logic": false,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "rows": 3,
+                                    "new_lines": "wpautop",
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": ""
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_ra_split_cards_background",
+                            "label": "Background",
+                            "name": "background",
+                            "type": "select",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "": "Default (black)",
+                                "alt": "Alternate (dark grey)",
+                                "glow": "Gold glow"
+                            },
+                            "default_value": false,
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_ra_split_cards_section_id",
+                            "label": "Section anchor ID",
+                            "name": "section_id",
+                            "type": "text",
+                            "instructions": "Optional. Lets you link to this section, e.g. #faq",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "layout_ra_faq",
+                    "name": "faq",
+                    "label": "FAQ Accordion",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_ra_faq_eyebrow",
+                            "label": "Small label (eyebrow)",
+                            "name": "eyebrow",
+                            "type": "text",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 35,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_ra_faq_title",
+                            "label": "Heading",
+                            "name": "title",
+                            "type": "text",
+                            "instructions": "Wrap words in <span> to colour them gold.",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 65,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_ra_faq_intro",
+                            "label": "Intro text",
+                            "name": "intro",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "rows": 2,
+                            "new_lines": "",
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_ra_faq_items",
+                            "label": "Questions",
+                            "name": "items",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "button_label": "Add question",
+                            "collapsed": "field_ra_faq_item_question",
+                            "min": 0,
+                            "max": 0,
+                            "sub_fields": [
+                                {
+                                    "key": "field_ra_faq_item_question",
+                                    "label": "Question",
+                                    "name": "question",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": false,
+                                    "conditional_logic": false,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": ""
+                                },
+                                {
+                                    "key": "field_ra_faq_item_answer",
+                                    "label": "Answer",
+                                    "name": "answer",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": false,
+                                    "conditional_logic": false,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "rows": 3,
+                                    "new_lines": "wpautop",
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": ""
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_ra_faq_schema",
+                            "label": "Output FAQ schema (JSON-LD)",
+                            "name": "schema",
+                            "type": "true_false",
+                            "instructions": "Enable on one FAQ block per page only.",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": 1,
+                            "ui": 1,
+                            "message": "",
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_ra_faq_background",
+                            "label": "Background",
+                            "name": "background",
+                            "type": "select",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "": "Default (black)",
+                                "alt": "Alternate (dark grey)",
+                                "glow": "Gold glow"
+                            },
+                            "default_value": false,
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_ra_faq_section_id",
+                            "label": "Section anchor ID",
+                            "name": "section_id",
+                            "type": "text",
+                            "instructions": "Optional. Lets you link to this section, e.g. #faq",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "layout_ra_testimonials",
+                    "name": "testimonials",
+                    "label": "Testimonials",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_ra_testimonials_eyebrow",
+                            "label": "Small label (eyebrow)",
+                            "name": "eyebrow",
+                            "type": "text",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 35,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_ra_testimonials_title",
+                            "label": "Heading",
+                            "name": "title",
+                            "type": "text",
+                            "instructions": "Wrap words in <span> to colour them gold.",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 65,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_ra_testimonials_intro",
+                            "label": "Intro text",
+                            "name": "intro",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "rows": 2,
+                            "new_lines": "",
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_ra_testimonials_items",
+                            "label": "Testimonials",
+                            "name": "items",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "button_label": "Add testimonial",
+                            "collapsed": "field_ra_testi_item_name",
+                            "min": 0,
+                            "max": 0,
+                            "sub_fields": [
+                                {
+                                    "key": "field_ra_testi_item_name",
+                                    "label": "Name",
+                                    "name": "name",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": false,
+                                    "conditional_logic": false,
+                                    "wrapper": {
+                                        "width": 40,
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": ""
+                                },
+                                {
+                                    "key": "field_ra_testi_item_location",
+                                    "label": "City \/ role",
+                                    "name": "location",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": false,
+                                    "conditional_logic": false,
+                                    "wrapper": {
+                                        "width": 40,
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": ""
+                                },
+                                {
+                                    "key": "field_ra_testi_item_rating",
+                                    "label": "Rating",
+                                    "name": "rating",
+                                    "type": "number",
+                                    "instructions": "",
+                                    "required": false,
+                                    "conditional_logic": false,
+                                    "wrapper": {
+                                        "width": 20,
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "min": 1,
+                                    "max": 5,
+                                    "default_value": 5,
+                                    "step": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": ""
+                                },
+                                {
+                                    "key": "field_ra_testi_item_text",
+                                    "label": "Review",
+                                    "name": "text",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": false,
+                                    "conditional_logic": false,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "rows": 3,
+                                    "new_lines": "",
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": ""
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_ra_testimonials_background",
+                            "label": "Background",
+                            "name": "background",
+                            "type": "select",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "": "Default (black)",
+                                "alt": "Alternate (dark grey)",
+                                "glow": "Gold glow"
+                            },
+                            "default_value": false,
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_ra_testimonials_section_id",
+                            "label": "Section anchor ID",
+                            "name": "section_id",
+                            "type": "text",
+                            "instructions": "Optional. Lets you link to this section, e.g. #faq",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "layout_ra_cta",
+                    "name": "cta",
+                    "label": "Call to Action Banner",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_ra_cta_title",
+                            "label": "Heading",
+                            "name": "title",
+                            "type": "text",
+                            "instructions": "Wrap words in <span> to colour them gold.",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_ra_cta_text",
+                            "label": "Text",
+                            "name": "text",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "rows": 2,
+                            "new_lines": "",
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_ra_cta_button_1",
+                            "label": "Primary button",
+                            "name": "button_1",
+                            "type": "link",
+                            "instructions": "Use URL \"#whatsapp\" to open WhatsApp chat.",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
+                        },
+                        {
+                            "key": "field_ra_cta_button_2",
+                            "label": "Secondary button",
+                            "name": "button_2",
+                            "type": "link",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
+                        },
+                        {
+                            "key": "field_ra_cta_style",
+                            "label": "Style",
+                            "name": "style",
+                            "type": "select",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "gold": "Gold panel",
+                                "dark": "Dark panel with gold border"
+                            },
+                            "default_value": "gold",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_ra_cta_background",
+                            "label": "Background",
+                            "name": "background",
+                            "type": "select",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "": "Default (black)",
+                                "alt": "Alternate (dark grey)",
+                                "glow": "Gold glow"
+                            },
+                            "default_value": false,
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_ra_cta_section_id",
+                            "label": "Section anchor ID",
+                            "name": "section_id",
+                            "type": "text",
+                            "instructions": "Optional. Lets you link to this section, e.g. #faq",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "layout_ra_contact",
+                    "name": "contact",
+                    "label": "Contact (details + form)",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_ra_contact_eyebrow",
+                            "label": "Small label (eyebrow)",
+                            "name": "eyebrow",
+                            "type": "text",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 35,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_ra_contact_title",
+                            "label": "Heading",
+                            "name": "title",
+                            "type": "text",
+                            "instructions": "Wrap words in <span> to colour them gold.",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 65,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_ra_contact_intro",
+                            "label": "Intro text",
+                            "name": "intro",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "rows": 2,
+                            "new_lines": "",
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_ra_contact_show_details",
+                            "label": "Show contact details (from Theme Settings)",
+                            "name": "show_details",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": 1,
+                            "ui": 1,
+                            "message": "",
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_ra_contact_form",
+                            "label": "Contact Form 7 form",
+                            "name": "form",
+                            "type": "post_object",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "wpcf7_contact_form"
+                            ],
+                            "return_format": "id",
+                            "allow_null": 1,
+                            "ui": 1,
+                            "taxonomy": [],
+                            "multiple": 0
+                        },
+                        {
+                            "key": "field_ra_contact_form_title",
+                            "label": "Form heading",
+                            "name": "form_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Send Us a Message",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_ra_contact_background",
+                            "label": "Background",
+                            "name": "background",
+                            "type": "select",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "": "Default (black)",
+                                "alt": "Alternate (dark grey)",
+                                "glow": "Gold glow"
+                            },
+                            "default_value": false,
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_ra_contact_section_id",
+                            "label": "Section anchor ID",
+                            "name": "section_id",
+                            "type": "text",
+                            "instructions": "Optional. Lets you link to this section, e.g. #faq",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "layout_ra_posts",
+                    "name": "posts",
+                    "label": "Latest Blog Posts",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_ra_posts_eyebrow",
+                            "label": "Small label (eyebrow)",
+                            "name": "eyebrow",
+                            "type": "text",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 35,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_ra_posts_title",
+                            "label": "Heading",
+                            "name": "title",
+                            "type": "text",
+                            "instructions": "Wrap words in <span> to colour them gold.",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 65,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_ra_posts_intro",
+                            "label": "Intro text",
+                            "name": "intro",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "rows": 2,
+                            "new_lines": "",
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_ra_posts_count",
+                            "label": "Number of posts",
+                            "name": "count",
+                            "type": "number",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 30,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": 3,
+                            "min": 1,
+                            "max": 9,
+                            "step": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_ra_posts_category",
+                            "label": "Category (optional)",
+                            "name": "category",
+                            "type": "taxonomy",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 30,
+                                "class": "",
+                                "id": ""
+                            },
+                            "taxonomy": "category",
+                            "field_type": "select",
+                            "allow_null": 1,
+                            "return_format": "id",
+                            "add_term": 0,
+                            "multiple": 0,
+                            "load_terms": 0,
+                            "save_terms": 0
+                        },
+                        {
+                            "key": "field_ra_posts_button",
+                            "label": "Button",
+                            "name": "button",
+                            "type": "link",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 40,
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
+                        },
+                        {
+                            "key": "field_ra_posts_background",
+                            "label": "Background",
+                            "name": "background",
+                            "type": "select",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "": "Default (black)",
+                                "alt": "Alternate (dark grey)",
+                                "glow": "Gold glow"
+                            },
+                            "default_value": false,
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_ra_posts_section_id",
+                            "label": "Section anchor ID",
+                            "name": "section_id",
+                            "type": "text",
+                            "instructions": "Optional. Lets you link to this section, e.g. #faq",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "layout_ra_content",
+                    "name": "content",
+                    "label": "Free Text Content",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_ra_content_content",
+                            "label": "Content",
+                            "name": "content",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "default_value": "",
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_ra_content_narrow",
+                            "label": "Narrow reading width",
+                            "name": "narrow",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": 1,
+                            "ui": 1,
+                            "message": "",
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_ra_content_background",
+                            "label": "Background",
+                            "name": "background",
+                            "type": "select",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "": "Default (black)",
+                                "alt": "Alternate (dark grey)",
+                                "glow": "Gold glow"
+                            },
+                            "default_value": false,
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_ra_content_section_id",
+                            "label": "Section anchor ID",
+                            "name": "section_id",
+                            "type": "text",
+                            "instructions": "Optional. Lets you link to this section, e.g. #faq",
+                            "required": false,
+                            "conditional_logic": false,
+                            "wrapper": {
+                                "width": 50,
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            ],
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [],
+    "active": true,
+    "description": "",
+    "show_in_rest": false,
+    "modified": 1791286145
+}

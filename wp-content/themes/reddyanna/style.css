@@ -1,0 +1,15 @@
+/*
+Theme Name: Reddy Anna
+Theme URI: http://localhost/reddyanna/
+Author: Reddy Anna
+Description: Custom, performance-focused theme for Reddy Anna — black & gold brand styling, ACF-powered page builder sections, Theme Settings (header, footer, contact, colours, Open Graph, scripts), Contact Form 7 and Yoast SEO integration.
+Version: 1.0.0
+Requires at least: 6.3
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: reddyanna
+Tags: custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, dark
+*/
+
+/* Main styles live in assets/css/main.css (loaded via functions.php). */

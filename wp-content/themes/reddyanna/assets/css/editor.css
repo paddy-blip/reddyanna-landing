@@ -1,0 +1,12 @@
+/* Block editor styles — mirror front-end typography so posts look the same while editing. */
+@font-face { font-family: "Josefin Sans"; src: url("../fonts/josefin-sans-var.woff2") format("woff2"); font-weight: 100 700; font-display: swap; }
+@font-face { font-family: "Poppins"; src: url("../fonts/poppins-400.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Poppins"; src: url("../fonts/poppins-600.woff2") format("woff2"); font-weight: 600; font-display: swap; }
+
+body { background: #0b0b0b; color: #d9d4c6; font-family: "Poppins", system-ui, sans-serif; font-size: 1.04rem; line-height: 1.7; }
+h1, h2, h3, h4, h5, h6, .editor-post-title__input { font-family: "Josefin Sans", "Century Gothic", sans-serif; color: #fff; line-height: 1.2; }
+h3 { color: #f3d77a; }
+a { color: #f3d77a; }
+blockquote { border-left: 3px solid #d4a537; padding: 12px 20px; background: #141414; }
+th { background: #1b1a17; color: #f3d77a; }
+th, td { border: 1px solid rgba(255, 255, 255, .1); padding: 10px 12px; }

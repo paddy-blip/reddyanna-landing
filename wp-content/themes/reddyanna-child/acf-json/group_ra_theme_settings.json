@@ -1,0 +1,860 @@
+{
+    "key": "group_ra_theme_settings",
+    "title": "Theme Settings",
+    "fields": [
+        {
+            "key": "field_ra_opt_tab_header",
+            "label": "Header",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_ra_opt_ra_header_logo",
+            "label": "Header logo",
+            "name": "ra_header_logo",
+            "type": "image",
+            "instructions": "Transparent PNG\/WebP recommended. Leave empty to use the bundled Reddy Anna logo.",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": 0,
+            "min_height": 0,
+            "min_size": 0,
+            "max_width": 0,
+            "max_height": 0,
+            "max_size": 0,
+            "mime_types": ""
+        },
+        {
+            "key": "field_ra_opt_ra_logo_width",
+            "label": "Logo display width (px)",
+            "name": "ra_logo_width",
+            "type": "number",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": 25,
+                "class": "",
+                "id": ""
+            },
+            "default_value": 170,
+            "min": 80,
+            "max": 400,
+            "step": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_ra_opt_ra_sticky_header",
+            "label": "Sticky header",
+            "name": "ra_sticky_header",
+            "type": "true_false",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": 25,
+                "class": "",
+                "id": ""
+            },
+            "default_value": 1,
+            "ui": 1,
+            "message": "",
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_ra_opt_ra_header_search",
+            "label": "Show search button",
+            "name": "ra_header_search",
+            "type": "true_false",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": 25,
+                "class": "",
+                "id": ""
+            },
+            "default_value": 1,
+            "ui": 1,
+            "message": "",
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_ra_opt_ra_header_button",
+            "label": "Header button",
+            "name": "ra_header_button",
+            "type": "link",
+            "instructions": "Use URL \"#whatsapp\" to open WhatsApp chat. Leave empty to hide.",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": 75,
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_ra_opt_ra_topbar_enable",
+            "label": "Show announcement bar",
+            "name": "ra_topbar_enable",
+            "type": "true_false",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": 25,
+                "class": "",
+                "id": ""
+            },
+            "default_value": 0,
+            "ui": 1,
+            "message": "",
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_ra_opt_ra_topbar_text",
+            "label": "Announcement text",
+            "name": "ra_topbar_text",
+            "type": "text",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_ra_opt_ra_topbar_enable",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": 75,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_ra_opt_tab_footer",
+            "label": "Footer",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_ra_opt_ra_footer_logo",
+            "label": "Footer logo",
+            "name": "ra_footer_logo",
+            "type": "image",
+            "instructions": "Leave empty to reuse the header logo.",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": 0,
+            "min_height": 0,
+            "min_size": 0,
+            "max_width": 0,
+            "max_height": 0,
+            "max_size": 0,
+            "mime_types": ""
+        },
+        {
+            "key": "field_ra_opt_ra_footer_logo_width",
+            "label": "Footer logo width (px)",
+            "name": "ra_footer_logo_width",
+            "type": "number",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "default_value": 200,
+            "min": 80,
+            "max": 400,
+            "step": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_ra_opt_ra_footer_about",
+            "label": "About text (under logo)",
+            "name": "ra_footer_about",
+            "type": "textarea",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "rows": 3,
+            "new_lines": "",
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_ra_opt_ra_footer_contact_title",
+            "label": "Column 2 title (contact)",
+            "name": "ra_footer_contact_title",
+            "type": "text",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": 33,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Get in Touch",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_ra_opt_ra_footer_pages_title",
+            "label": "Column 3 title (menu: Footer – Important Pages)",
+            "name": "ra_footer_pages_title",
+            "type": "text",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": 33,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Important Pages",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_ra_opt_ra_footer_legal_title",
+            "label": "Column 4 title (menu: Footer – Legal Pages)",
+            "name": "ra_footer_legal_title",
+            "type": "text",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": 34,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Legal Pages",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_ra_opt_ra_footer_disclaimer",
+            "label": "Disclaimer",
+            "name": "ra_footer_disclaimer",
+            "type": "textarea",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "rows": 3,
+            "new_lines": "",
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_ra_opt_ra_copyright",
+            "label": "Copyright text",
+            "name": "ra_copyright",
+            "type": "text",
+            "instructions": "Tokens: {year}, {site}",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Copyright © {year} {site}. All Rights Reserved.",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_ra_opt_tab_contact",
+            "label": "Contact & Social",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_ra_opt_ra_phone",
+            "label": "Phone (display)",
+            "name": "ra_phone",
+            "type": "text",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "placeholder": "+91 90000 00000",
+            "default_value": "",
+            "maxlength": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_ra_opt_ra_email",
+            "label": "Email",
+            "name": "ra_email",
+            "type": "email",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "placeholder": "support@reddyanna.com",
+            "default_value": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_ra_opt_ra_address",
+            "label": "Address \/ service area",
+            "name": "ra_address",
+            "type": "textarea",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "rows": 2,
+            "new_lines": "br",
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_ra_opt_ra_whatsapp_number",
+            "label": "WhatsApp number",
+            "name": "ra_whatsapp_number",
+            "type": "text",
+            "instructions": "Country code + number, digits only (e.g. 919000000000).",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "placeholder": 919000000000,
+            "default_value": "",
+            "maxlength": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_ra_opt_ra_whatsapp_message",
+            "label": "WhatsApp pre-filled message",
+            "name": "ra_whatsapp_message",
+            "type": "text",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "placeholder": "Hi Reddy Anna, I would like to get my Cricket ID.",
+            "default_value": "",
+            "maxlength": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_ra_opt_ra_whatsapp_float",
+            "label": "Floating WhatsApp button",
+            "name": "ra_whatsapp_float",
+            "type": "true_false",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 1,
+            "ui": 1,
+            "message": "",
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_ra_opt_ra_social",
+            "label": "Social links",
+            "name": "ra_social",
+            "type": "repeater",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "button_label": "Add social link",
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "sub_fields": [
+                {
+                    "key": "field_ra_opt_social_network",
+                    "label": "Network",
+                    "name": "network",
+                    "type": "select",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "facebook": "Facebook",
+                        "instagram": "Instagram",
+                        "x": "X (Twitter)",
+                        "telegram": "Telegram",
+                        "youtube": "YouTube",
+                        "whatsapp": "WhatsApp"
+                    },
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "default_value": false,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_ra_opt_social_url",
+                    "label": "URL",
+                    "name": "url",
+                    "type": "url",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                }
+            ]
+        },
+        {
+            "key": "field_ra_opt_tab_colors",
+            "label": "Brand Colours",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_ra_opt_ra_color_primary",
+            "label": "Gold (primary)",
+            "name": "ra_color_primary",
+            "type": "color_picker",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": 33,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#d4a537",
+            "enable_opacity": false,
+            "return_format": "string"
+        },
+        {
+            "key": "field_ra_opt_ra_color_primary_light",
+            "label": "Gold light (highlight)",
+            "name": "ra_color_primary_light",
+            "type": "color_picker",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": 33,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#f3d77a",
+            "enable_opacity": false,
+            "return_format": "string"
+        },
+        {
+            "key": "field_ra_opt_ra_color_text",
+            "label": "Body text",
+            "name": "ra_color_text",
+            "type": "color_picker",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": 34,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#f2efe6",
+            "enable_opacity": false,
+            "return_format": "string"
+        },
+        {
+            "key": "field_ra_opt_ra_color_bg",
+            "label": "Page background",
+            "name": "ra_color_bg",
+            "type": "color_picker",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#0b0b0b",
+            "enable_opacity": false,
+            "return_format": "string"
+        },
+        {
+            "key": "field_ra_opt_ra_color_surface",
+            "label": "Card \/ panel background",
+            "name": "ra_color_surface",
+            "type": "color_picker",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#141414",
+            "enable_opacity": false,
+            "return_format": "string"
+        },
+        {
+            "key": "field_ra_opt_tab_og",
+            "label": "Open Graph \/ SEO",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_ra_opt_og_msg",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Default social-share image used when a page or post has no image of its own. Synced automatically to Yoast SEO → Social → Default image. Per-page titles, descriptions and images are edited in the Yoast box on each page.",
+            "esc_html": 0,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_ra_opt_ra_og_image",
+            "label": "Default share image \/ site logo (1200 × 630)",
+            "name": "ra_og_image",
+            "type": "image",
+            "instructions": "Exactly 1200 × 630 px (JPG\/PNG, under 300 KB).",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "medium",
+            "min_width": 1200,
+            "min_height": 630,
+            "library": "all",
+            "min_size": 0,
+            "max_width": 0,
+            "max_height": 0,
+            "max_size": 0,
+            "mime_types": ""
+        },
+        {
+            "key": "field_ra_opt_ra_og_title",
+            "label": "Default share title",
+            "name": "ra_og_title",
+            "type": "text",
+            "instructions": "Fallback og:title when Yoast is inactive. Defaults to the site name.",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_ra_opt_ra_og_description",
+            "label": "Default share description",
+            "name": "ra_og_description",
+            "type": "textarea",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "rows": 2,
+            "new_lines": "",
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_ra_opt_ra_twitter_site",
+            "label": "X \/ Twitter username",
+            "name": "ra_twitter_site",
+            "type": "text",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "placeholder": "@reddyanna",
+            "default_value": "",
+            "maxlength": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_ra_opt_ra_theme_color",
+            "label": "Mobile browser theme colour",
+            "name": "ra_theme_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#0b0b0b",
+            "enable_opacity": false,
+            "return_format": "string"
+        },
+        {
+            "key": "field_ra_opt_tab_scripts",
+            "label": "Scripts",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_ra_opt_ra_head_scripts",
+            "label": "Head scripts",
+            "name": "ra_head_scripts",
+            "type": "textarea",
+            "instructions": "e.g. Google Analytics \/ Search Console verification. Output before <\/head>.",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "rows": 5,
+            "new_lines": "",
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_ra_opt_ra_body_scripts",
+            "label": "Body open scripts",
+            "name": "ra_body_scripts",
+            "type": "textarea",
+            "instructions": "Output right after <body> (e.g. GTM noscript).",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "rows": 4,
+            "new_lines": "",
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_ra_opt_ra_footer_scripts",
+            "label": "Footer scripts",
+            "name": "ra_footer_scripts",
+            "type": "textarea",
+            "instructions": "Output before <\/body>.",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "rows": 4,
+            "new_lines": "",
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "ra-theme-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [],
+    "active": true,
+    "description": "",
+    "show_in_rest": false,
+    "modified": 1791286146
+}
